@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6e406a68-3826-4f85-9ea0-b16cefd93f31}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>A1_Main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <InterpreterVersion />
+    <Name>Bachelor Stage Data Analysis</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="B2_analysis.py" />
+    <Compile Include="C2_peaks_execute.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="B1_split.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Z1_basic_fft_model.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="F2_fft.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="F0_set.py" />
+    <Compile Include="B3_ab.py" />
+    <Compile Include="F4_save.py" />
+    <Compile Include="F3_read.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="F1_generalised.py" />
+    <Compile Include="A1_Main.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="A3_command.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="E1_file_master.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="C1_filter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="D1_combine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="E2_rest_commands.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
